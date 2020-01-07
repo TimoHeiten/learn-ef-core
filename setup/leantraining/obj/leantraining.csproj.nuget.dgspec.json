@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/timoheiten/OneDrive/Company/Projects/content-2020/blog/ef-core/app/setup/leantraining/leantraining.csproj": {}
+  },
+  "projects": {
+    "/Users/timoheiten/OneDrive/Company/Projects/content-2020/blog/ef-core/app/setup/leantraining/leantraining.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/timoheiten/OneDrive/Company/Projects/content-2020/blog/ef-core/app/setup/leantraining/leantraining.csproj",
+        "projectName": "leantraining",
+        "projectPath": "/Users/timoheiten/OneDrive/Company/Projects/content-2020/blog/ef-core/app/setup/leantraining/leantraining.csproj",
+        "packagesPath": "/Users/timoheiten/.nuget/packages/",
+        "outputPath": "/Users/timoheiten/OneDrive/Company/Projects/content-2020/blog/ef-core/app/setup/leantraining/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/timoheiten/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

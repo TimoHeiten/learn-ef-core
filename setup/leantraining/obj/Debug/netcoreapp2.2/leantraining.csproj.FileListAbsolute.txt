@@ -1,0 +1,11 @@
+/Users/timoheiten/OneDrive/Company/Projects/content-2020/blog/ef-core/app/setup/leantraining/obj/Debug/netcoreapp2.2/leantraining.csprojAssemblyReference.cache
+/Users/timoheiten/OneDrive/Company/Projects/content-2020/blog/ef-core/app/setup/leantraining/obj/Debug/netcoreapp2.2/leantraining.csproj.CoreCompileInputs.cache
+/Users/timoheiten/OneDrive/Company/Projects/content-2020/blog/ef-core/app/setup/leantraining/obj/Debug/netcoreapp2.2/leantraining.AssemblyInfoInputs.cache
+/Users/timoheiten/OneDrive/Company/Projects/content-2020/blog/ef-core/app/setup/leantraining/obj/Debug/netcoreapp2.2/leantraining.AssemblyInfo.cs
+/Users/timoheiten/OneDrive/Company/Projects/content-2020/blog/ef-core/app/setup/leantraining/bin/Debug/netcoreapp2.2/leantraining.deps.json
+/Users/timoheiten/OneDrive/Company/Projects/content-2020/blog/ef-core/app/setup/leantraining/bin/Debug/netcoreapp2.2/leantraining.runtimeconfig.json
+/Users/timoheiten/OneDrive/Company/Projects/content-2020/blog/ef-core/app/setup/leantraining/bin/Debug/netcoreapp2.2/leantraining.runtimeconfig.dev.json
+/Users/timoheiten/OneDrive/Company/Projects/content-2020/blog/ef-core/app/setup/leantraining/bin/Debug/netcoreapp2.2/leantraining.dll
+/Users/timoheiten/OneDrive/Company/Projects/content-2020/blog/ef-core/app/setup/leantraining/bin/Debug/netcoreapp2.2/leantraining.pdb
+/Users/timoheiten/OneDrive/Company/Projects/content-2020/blog/ef-core/app/setup/leantraining/obj/Debug/netcoreapp2.2/leantraining.dll
+/Users/timoheiten/OneDrive/Company/Projects/content-2020/blog/ef-core/app/setup/leantraining/obj/Debug/netcoreapp2.2/leantraining.pdb
