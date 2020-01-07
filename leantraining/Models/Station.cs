@@ -4,9 +4,8 @@ using System.Linq;
 
 namespace leantraining.Models
 {
-    public class Station
+    public class Station : Entity
     {
-        public int Id { get; set; }
         public string Position { get; set; }
         public Round Round { get; set; }
         public List<StationAssemblyStep> AssemblySteps { get; set; }

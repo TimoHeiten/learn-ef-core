@@ -4,9 +4,8 @@ using System.Linq;
 
 namespace leantraining.Models
 {
-    public class Product
+    public class Product : Entity
     {
-         public int Id { get; set; }
         public DateTime Start { get; set; }
         public DateTime End { get; set; }
         public Round Round { get; set; }

@@ -1,12 +1,15 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace leantraining.Models
 {
-    public class Round
+    public class Round : Entity
     {
-        public int Id { get; set; }
         public DateTime Start { get; set; }
         public DateTime? End { get; set; }
+
+        public List<Product> Products { get; set; }
+        public List<Station> Stations { get; set; }
     }
 }
