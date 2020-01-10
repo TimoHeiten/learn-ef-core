@@ -11,6 +11,7 @@ namespace leantraining
     {
         static async Task Main(string[] args)
         {
+            await SeedAsync();
             var product = await GetLastProductAsync();
 
             System.Console.WriteLine(product);
@@ -29,6 +30,26 @@ namespace leantraining
                                    .FirstOrDefaultAsync();
                 
                 return first;
+            }
+        }
+
+        private static async Task SeedAsync()
+        {
+            using (var session = new LeantrainingDbContext())
+            {
+                bool anyRoundWithId2 = await session.Set<Round>().AnyAsync(x => x.Id == 2);
+                if (!anyRoundWithId2)
+                {
+                    var round = new Round
+                    {
+                        Id = 2,
+                        Start = new DateTime(2020, 01, 01),
+                        End = null
+                    };
+
+                    session.Add(round);
+                    await session.SaveChangesAsync();
+                }
             }
         }
     }

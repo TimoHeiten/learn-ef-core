@@ -11,5 +11,10 @@ namespace leantraining.Models
         public Round Round { get; set; }
         public int RoundId { get; set; }
         public List<Part> Parts { get; set; }
+
+        public override string ToString()
+        {
+            return $"Id:[{Id}] - Start:[{Start.ToString("g")}]";
+        }
     }
 }
