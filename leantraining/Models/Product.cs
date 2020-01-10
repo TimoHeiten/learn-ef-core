@@ -9,6 +9,7 @@ namespace leantraining.Models
         public DateTime Start { get; set; }
         public DateTime End { get; set; }
         public Round Round { get; set; }
+        public int RoundId { get; set; }
         public List<Part> Parts { get; set; }
     }
 }

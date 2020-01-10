@@ -1,3 +1,4 @@
+using System;
 using leantraining.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -22,7 +23,14 @@ namespace leantraining.DataAccess
             product.Property(x => x.End);
             product.HasOne(x => x.Round)
                    .WithMany(x => x.Products)
+                   .HasForeignKey(x => x.RoundId)
                    .IsRequired();
+            product.HasData(
+                new Product[]
+                {
+                    new Product() { RoundId =1, Start = DateTime.Now, Id = 42 }
+                }
+            );
             
             var station = Setup<Station>(mb);
             station.Property(x => x.Position)

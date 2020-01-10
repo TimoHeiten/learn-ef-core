@@ -9,7 +9,7 @@ namespace leantraining
 {
     class Program
     {
-        static async void Main(string[] args)
+        static async Task Main(string[] args)
         {
             var product = await GetLastProductAsync();
 
