@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using leantraining.DataAccess;
 using leantraining.Models;
+using leantraining.UseCases;
 using Microsoft.EntityFrameworkCore;
 
 namespace leantraining
@@ -11,11 +13,32 @@ namespace leantraining
     {
         static async Task Main(string[] args)
         {
+            string key = args.Last();
+
+            if (!_map.TryGetValue(key, out UseCase useCase))
+            {
+                var result = await useCase.ExecuteAsync();
+                System.Console.WriteLine(result);
+
+                Console.ReadLine();
+                return;
+            }
+
             await SeedAsync();
             var product = await GetLastProductAsync();
 
             System.Console.WriteLine(product);
             Console.ReadLine();
+        }
+
+        static Dictionary<string, UseCase> _map = new Dictionary<string, UseCase>();
+
+        static Program()
+        {
+            _map.Add("read", new ReadUseCase());
+            _map.Add("create", new CreateUseCase());
+            _map.Add("update", new UpdateUseCase());
+            _map.Add("delete", new DeleteUseCase());
         }
 
         private static async Task<Product> GetLastProductAsync()
