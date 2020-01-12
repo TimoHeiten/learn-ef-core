@@ -7,6 +7,7 @@ namespace leantraining.UseCases
     {
         public abstract Task<string> ExecuteAsync();
 
+        public const int ROUND_ID_FOR_DEMO = 99;
 
         protected LeantrainingDbContext CreateSession()
             => new LeantrainingDbContext();

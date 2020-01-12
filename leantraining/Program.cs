@@ -15,7 +15,7 @@ namespace leantraining
         {
             string key = args.Last();
 
-            if (!_map.TryGetValue(key, out UseCase useCase))
+            if (_map.TryGetValue(key, out UseCase useCase))
             {
                 var result = await useCase.ExecuteAsync();
                 System.Console.WriteLine(result);
