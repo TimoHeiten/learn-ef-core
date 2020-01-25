@@ -31,6 +31,7 @@ namespace leantraining.DataAccess
                     new Product() { RoundId =1, Start = DateTime.Now, Id = 42 }
                 }
             );
+            product.Property(x => x.Name).HasMaxLength(50);
             
             var station = Setup<Station>(mb);
             station.Property(x => x.Position)
